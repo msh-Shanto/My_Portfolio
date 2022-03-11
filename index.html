@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Shahadat Shanto</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/robot.png" width="30" height="30" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css"> </head>
 
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasRight"
-          aria-labelledby="offcanvasRightLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-              </ul>
-            </h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body"></div>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!--logo-->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/robot.png" width="30" height="30" alt="" /></a>
+            <!--logo end-->
+
+
+
+            <!--navbar button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                </div>
+            </div>
+            <!--navbar button end-->
         </div>
-      </div>
     </nav>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+
+    <!--background img carousel start-->
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active background1 position-relative">
+                   <div class=" w-100 text-uppercase top-50 start-50 translate-middle position-absolute text-center"> <h1 class="display-2  text-light  ">Shahadat Shanto</h1>
+                    <p class="display-6 text-warning ">A front-end web developer<span>&#9998;</span></p></div>
+                </div>
+                <div class="carousel-item background2 position-relative">
+                    <div class=" w-100 text-uppercase top-50 start-50 translate-middle position-absolute text-center"> <h1 class="display-2  text-light  ">Shahadat Shanto</h1>
+                        <p class="display-6 text-warning ">A Programmer<span>&#9749;</span></p></div>
+                   
+                </div>
+                <div class="carousel-item background3 position-relative">
+                    <div class=" w-100 text-uppercase top-50 start-50 translate-middle position-absolute text-center"> <h1 class="display-2  text-light  ">Shahadat Shanto</h1>
+                        <p class="display-6 text-warning ">A Problem Solver<span>😎</span> </p></div>
+                  
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!--background img carousel end-->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </html>

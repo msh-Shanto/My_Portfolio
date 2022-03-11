@@ -1,0 +1,22 @@
+.carousel-item {
+  height: 100vh;
+  background-position: center;
+}
+
+.background1 {
+  background-image: url("img/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background2 {
+  background-image: url("img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background3 {
+  background-image: url("img/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
